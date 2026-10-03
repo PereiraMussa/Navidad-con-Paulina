@@ -59,8 +59,7 @@ export function StickyMobileBar() {
           </div>
 
           <a
-            href="#oferta"
-            onClick={scrollToOffer}
+            href={siteConfig.pricing.checkoutUrl}
             className="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 text-xs font-bold text-[#FAF7F2] bg-[#A60B08] active:bg-[#5E0001] rounded-lg shadow-sm whitespace-nowrap cursor-pointer"
           >
             <span className="font-display">Comprar</span>

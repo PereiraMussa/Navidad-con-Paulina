@@ -145,8 +145,7 @@ export function Hero() {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
                 {/* Botón con animación de pulso suave y constante mediante Framer Motion */}
                 <motion.a
-                  href="#oferta"
-                  onClick={scrollToOffer}
+                  href={siteConfig.pricing.checkoutUrl}
                   animate={{
                     scale: [1, 1.025, 1],
                     boxShadow: [

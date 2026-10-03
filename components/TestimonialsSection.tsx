@@ -321,8 +321,7 @@ export function TestimonialsSection() {
             Únete a más de 2.400 personas que ya están organizando una celebración sin estrés.
           </p>
           <a
-            href="#oferta"
-            onClick={scrollToOffer}
+            href={siteConfig.pricing.checkoutUrl}
             className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#A60B08] hover:text-[#5E0001] underline underline-offset-4 decoration-[#DFBC76] hover:decoration-[#5E0001] transition-all cursor-pointer group"
           >
             <span>Quiero preparar mi Navidad con la guía de Paulina</span>

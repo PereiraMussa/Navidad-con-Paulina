@@ -91,8 +91,7 @@ export function PurchaseRoadmap() {
         {/* Guided CTA Button */}
         <div className="text-center">
           <a
-            href="#oferta"
-            onClick={scrollToOffer}
+            href={siteConfig.pricing.checkoutUrl}
             className="inline-flex items-center gap-2.5 px-7 py-3.5 text-sm font-bold text-[#FAF7F2] bg-[#A60B08] hover:bg-[#5E0001] active:scale-[0.98] rounded-xl shadow-md hover:shadow-lg transition-all cursor-pointer focus-visible:outline-2 focus-visible:outline-[#A60B08]"
           >
             <span className="font-display">Quiero dar el paso 01 por {siteConfig.pricing.currentPrice}</span>

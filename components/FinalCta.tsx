@@ -53,8 +53,7 @@ export function FinalCta() {
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <a
-                href="#oferta"
-                onClick={scrollToOffer}
+                href={siteConfig.pricing.checkoutUrl}
                 className="inline-flex items-center justify-center gap-3 px-8 py-4.5 text-base sm:text-lg font-bold text-[#FAF7F2] bg-[#A60B08] hover:bg-[#8C0705] active:scale-[0.98] rounded-xl shadow-xl hover:shadow-2xl transition-all group border border-[#B58A45]/40 focus-visible:outline-3 focus-visible:outline-[#DFBC76] cursor-pointer"
               >
                 <span className="font-display font-bold">{siteConfig.finalCta.buttonText}</span>

@@ -25,7 +25,7 @@ export const siteConfig = {
     previousPrice: "US$15,00",
     discount: "67%",
     currency: "USD",
-    checkoutUrl: "[INSERIR_URL_DO_CHECKOUT]", // Reemplaza aquí tu enlace de pago (Hotmart, Stripe, LemonSqueezy, etc.)
+    checkoutUrl: "https://pay.hotmart.com/A107873314Y", // Hotmart Checkout Oficial
   },
 
   // Ubicación de archivos e imágenes

@@ -158,8 +158,7 @@ export function InteractiveDiagnostic() {
             </div>
 
             <a
-              href="#oferta"
-              onClick={scrollToOffer}
+              href={siteConfig.pricing.checkoutUrl}
               className="shrink-0 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#DFBC76] hover:bg-[#EED59B] text-[#360001] text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all cursor-pointer whitespace-nowrap active:scale-[0.98]"
             >
               <span className="font-display">Resolver con la guía</span>

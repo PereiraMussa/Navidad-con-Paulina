@@ -111,8 +111,7 @@ export function ScrollTriggerProvider({ children }: { children: React.ReactNode 
 
               {/* Botão de Compra Flutuante no Desktop quando estiver descendo ou subindo */}
               <a
-                href="#oferta"
-                onClick={scrollToOffer}
+                href={siteConfig.pricing.checkoutUrl}
                 aria-label="Comprar Guía de Navidad"
                 className="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#A60B08] hover:bg-[#5E0001] text-[#FAF7F2] text-xs font-bold shadow-xl border border-[#DFBC76]/40 cursor-pointer active:scale-95 transition-all"
               >
