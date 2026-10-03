@@ -1,0 +1,8 @@
+{
+  "name": "La Navidad que Todos Recordarán – Paulina Celebra",
+  "description": "Guía práctica de decoración, sabores y organización para crear una celebración navideña hermosa, acogedora y sin estrés por Paulina Celebra.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

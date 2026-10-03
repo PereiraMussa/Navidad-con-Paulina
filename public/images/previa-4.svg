@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 900" width="700" height="900">
+  <defs>
+    <linearGradient id="pageBg4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF7" />
+      <stop offset="100%" stop-color="#F5F0E8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="700" height="900" fill="url(#pageBg4)" />
+  <rect x="25" y="25" width="650" height="850" fill="none" stroke="#D5CFC5" stroke-width="1" />
+
+  <!-- Placeholder Badge Indicator -->
+  <g transform="translate(350, 65)">
+    <rect x="-140" y="-16" width="280" height="32" rx="4" fill="#5E0001" />
+    <text x="0" y="5" text-anchor="middle" font-family="'Manrope', sans-serif" font-size="12" font-weight="700" letter-spacing="1" fill="#FAF7F2">
+      [PRÉVIA DA PÁGINA 4]
+    </text>
+  </g>
+
+  <!-- Editorial Chapter Header -->
+  <text x="50" y="140" font-family="'Manrope', sans-serif" font-size="12" font-weight="700" letter-spacing="3" fill="#B58A45">
+    CAPÍTULO VI · DETALLES QUE EMOCIONAN
+  </text>
+  <text x="50" y="180" font-family="'Fraunces', Georgia, serif" font-size="28" font-weight="900" fill="#1D2E19">
+    Tarjetas de Gratitud en Familia
+  </text>
+  <line x1="50" y1="205" x2="650" y2="205" stroke="#CFCABF" stroke-width="1.5" />
+
+  <!-- Emotional Cards Display -->
+  <g transform="translate(50, 240)">
+    <rect x="0" y="0" width="285" height="180" rx="8" fill="#FFFFFF" stroke="#E5DEC9" stroke-width="1" />
+    <text x="25" y="45" font-family="'Parisienne', cursive" font-size="22" fill="#A60B08">Para Mamá</text>
+    <text x="25" y="80" font-family="'Manrope', sans-serif" font-size="12" fill="#4A3D36">"Gracias por enseñarme que la Navidad vive en el calor de tus abrazos."</text>
+    <rect x="25" y="130" width="60" height="2" fill="#B58A45" />
+
+    <rect x="315" y="0" width="285" height="180" rx="8" fill="#FFFFFF" stroke="#E5DEC9" stroke-width="1" />
+    <text x="340" y="45" font-family="'Parisienne', cursive" font-size="22" fill="#1D2E19">Para Mis Hijos</text>
+    <text x="340" y="80" font-family="'Manrope', sans-serif" font-size="12" fill="#4A3D36">"La mayor magia de esta noche es ver sus sonrisas iluminar la casa."</text>
+    <rect x="340" y="130" width="60" height="2" fill="#B58A45" />
+  </g>
+
+  <!-- Editorial Ritual Box -->
+  <g transform="translate(50, 460)">
+    <rect x="0" y="0" width="600" height="230" rx="8" fill="#F0EBE1" />
+    <text x="30" y="45" font-family="'Fraunces', Georgia, serif" font-size="18" font-weight="700" fill="#5E0001">
+      El Ritual del Agradecimiento
+    </text>
+    <text x="30" y="85" font-family="'Manrope', sans-serif" font-size="13" fill="#4A3D36">
+      Antes de iniciar la cena, colocar una pequeña tarjeta doblada bajo cada plato.
+      Invita a cada integrante a leer una sola frase que exprese por qué agradece
+      haber compartido este año con quien tiene al lado.
+    </text>
+    <text x="30" y="150" font-family="'Manrope', sans-serif" font-size="13" fill="#4A3D36">
+      No cuesta dinero, no añade trabajo y se convertirá en el instante más comentado
+      y recordado de toda la celebración.
+    </text>
+  </g>
+
+  <!-- Editorial Page Footer -->
+  <line x1="50" y1="820" x2="650" y2="820" stroke="#CFCABF" stroke-width="1" />
+  <text x="50" y="845" font-family="'Manrope', sans-serif" font-size="11" fill="#76584C">
+    La Navidad que Todos Recordarán · Paulina Celebra
+  </text>
+  <text x="650" y="845" text-anchor="end" font-family="'Manrope', sans-serif" font-size="11" font-weight="600" fill="#5E0001">
+    Pág. 47
+  </text>
+</svg>

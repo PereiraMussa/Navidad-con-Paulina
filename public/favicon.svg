@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <circle cx="32" cy="32" r="30" fill="#5E0001" />
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#B58A45" stroke-width="2" />
+  <!-- Mini Christmas Pine and Bauble -->
+  <path d="M 32 14 L 38 24 L 35 24 L 42 34 L 38 34 L 45 44 L 19 44 L 26 34 L 22 34 L 29 24 L 26 24 Z" fill="#1D2E19" />
+  <circle cx="32" cy="46" r="4" fill="#A60B08" stroke="#B58A45" stroke-width="1" />
+  <polygon points="32,10 33.5,13.5 37,14 34.5,16.5 35,20 32,18 29,20 29.5,16.5 27,14 30.5,13.5" fill="#EED59B" />
+</svg>

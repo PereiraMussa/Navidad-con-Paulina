@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 900" width="700" height="900">
+  <defs>
+    <linearGradient id="pageBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF7" />
+      <stop offset="100%" stop-color="#F5F0E8" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B58A45" />
+      <stop offset="100%" stop-color="#8E6727" />
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Editorial Paper Canvas -->
+  <rect width="700" height="900" fill="url(#pageBg)" />
+  <rect x="25" y="25" width="650" height="850" fill="none" stroke="#D5CFC5" stroke-width="1" />
+
+  <!-- Placeholder Badge Indicator (Requested explicitly) -->
+  <g transform="translate(350, 65)">
+    <rect x="-140" y="-16" width="280" height="32" rx="4" fill="#5E0001" />
+    <text x="0" y="5" text-anchor="middle" font-family="'Manrope', sans-serif" font-size="12" font-weight="700" letter-spacing="1" fill="#FAF7F2">
+      [PRÉVIA DA PÁGINA 1]
+    </text>
+  </g>
+
+  <!-- Editorial Chapter Header -->
+  <text x="50" y="140" font-family="'Manrope', sans-serif" font-size="12" font-weight="700" letter-spacing="3" fill="#B58A45">
+    CAPÍTULO II · ARMONÍA CROMÁTICA
+  </text>
+  <text x="50" y="180" font-family="'Fraunces', Georgia, serif" font-size="28" font-weight="900" fill="#1D2E19">
+    La Tríada de Tonos Nobles
+  </text>
+  <line x1="50" y1="205" x2="650" y2="205" stroke="#CFCABF" stroke-width="1.5" />
+
+  <!-- Editorial Color Swatches Representation -->
+  <g transform="translate(50, 240)">
+    <!-- Swatch 1: Vino Profundo -->
+    <rect x="0" y="0" width="180" height="110" rx="6" fill="#5E0001" />
+    <text x="12" y="140" font-family="'Manrope', sans-serif" font-size="13" font-weight="700" fill="#2D231E">Vino Profundo</text>
+    <text x="12" y="160" font-family="'Manrope', sans-serif" font-size="11" fill="#76584C">#5E0001 · Base de calidez</text>
+
+    <!-- Swatch 2: Verde Floresta -->
+    <rect x="210" y="0" width="180" height="110" rx="6" fill="#1D2E19" />
+    <text x="222" y="140" font-family="'Manrope', sans-serif" font-size="13" font-weight="700" fill="#2D231E">Verde Floresta</text>
+    <text x="222" y="160" font-family="'Manrope', sans-serif" font-size="11" fill="#76584C">#1D2E19 · Conexión natural</text>
+
+    <!-- Swatch 3: Marfil Noble -->
+    <rect x="420" y="0" width="180" height="110" rx="6" fill="#CFCABF" stroke="#B8B2A5" stroke-width="1" />
+    <text x="432" y="140" font-family="'Manrope', sans-serif" font-size="13" font-weight="700" fill="#2D231E">Marfil Noble</text>
+    <text x="432" y="160" font-family="'Manrope', sans-serif" font-size="11" fill="#76584C">#CFCABF · Luminosidad y aire</text>
+  </g>
+
+  <!-- Step-by-step Editorial Guidelines Box -->
+  <g transform="translate(50, 440)">
+    <rect x="0" y="0" width="600" height="240" rx="8" fill="#FFFFFF" stroke="#E5DEC9" stroke-width="1" />
+    <text x="30" y="45" font-family="'Fraunces', Georgia, serif" font-size="18" font-weight="700" fill="#5E0001">
+      Regla de Proporción 60 - 30 - 10 en la Sala
+    </text>
+    
+    <text x="30" y="85" font-family="'Manrope', sans-serif" font-size="13" fill="#4A3D36">
+      • 60% de superficie en marfil y textiles claros para mantener amplitud y luz.
+    </text>
+    <text x="30" y="125" font-family="'Manrope', sans-serif" font-size="13" fill="#4A3D36">
+      • 30% en follaje verde pino profundo (ramas naturales, centro de mesa y guirnaldas).
+    </text>
+    <text x="30" y="165" font-family="'Manrope', sans-serif" font-size="13" fill="#4A3D36">
+      • 10% en toques de rojo vino y destellos dorados para enfocar miradas de calidez.
+    </text>
+    <text x="30" y="205" font-family="'Manrope', sans-serif" font-size="12" font-style="italic" fill="#76584C">
+      Nota práctica: Utiliza lo que ya posees agrupándolo por familias de color.
+    </text>
+  </g>
+
+  <!-- Editorial Page Footer -->
+  <line x1="50" y1="820" x2="650" y2="820" stroke="#CFCABF" stroke-width="1" />
+  <text x="50" y="845" font-family="'Manrope', sans-serif" font-size="11" fill="#76584C">
+    La Navidad que Todos Recordarán · Paulina Celebra
+  </text>
+  <text x="650" y="845" text-anchor="end" font-family="'Manrope', sans-serif" font-size="11" font-weight="600" fill="#5E0001">
+    Pág. 18
+  </text>
+</svg>
