@@ -369,7 +369,7 @@ export const siteConfig = {
     title: "Completa tu celebración de fin de año",
     name: "Kit Réveillon Inesquecível",
     description: "La guía y herramientas prácticas de Paulina Celebra para despedir el año y recibir el Año Nuevo con elegancia, serenidad y momentos memorables.",
-    price: "1,99",
+    price: "3,99",
     image: "/images/kit-reveillon-inesquecivel.jpg",
     isAvailable: true,
     benefitsList: [

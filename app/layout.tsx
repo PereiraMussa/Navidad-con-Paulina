@@ -168,7 +168,7 @@ export default function RootLayout({
         image: `${siteUrl}/images/kit-reveillon-inesquecivel.jpg`,
         offers: {
           '@type': 'Offer',
-          price: '1.99',
+          price: '3.99',
           priceCurrency: 'USD',
           availability: 'https://schema.org/InStock',
           url: siteUrl,

@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import Image from 'next/image';
 import { FaCircleCheck, FaBagShopping, FaXmark } from 'react-icons/fa6';
+import { siteConfig } from '@/lib/config';
 
 interface PurchaseEvent {
   id: string;
@@ -17,18 +18,18 @@ interface PurchaseEvent {
   badgeColor: string;
 }
 
-// Catálogo de compras alternadas entre o Produto Principal ($4,95) e o Kit Réveillon Inesquecível ($1,99)
+// Catálogo de compras alternadas entre a Guia Principal ($4,95) e o Combo com Kit Réveillon ($4,95 + $3,99 = $8,94)
 const purchaseCatalog: PurchaseEvent[] = [
   {
     id: 'p1',
     name: 'Mariana S.',
     location: 'Madrid, España',
     timeAgo: 'Hace 35 segundos',
-    productName: 'Kit Réveillon Inesquecível',
-    price: 'US$1,99',
+    productName: 'Guía de Navidad + Kit Réveillon',
+    price: 'US$8,94',
     imageSrc: '/images/kit-reveillon-inesquecivel.jpg',
-    badge: 'Kit Réveillon',
-    badgeColor: 'bg-[#B58A45]/20 text-[#5E0001] border-[#B58A45]/40',
+    badge: 'Combo Completo',
+    badgeColor: 'bg-emerald-500/15 text-emerald-800 border-emerald-500/30',
   },
   {
     id: 'p2',
@@ -46,11 +47,11 @@ const purchaseCatalog: PurchaseEvent[] = [
     name: 'Camila M.',
     location: 'Ciudad de México',
     timeAgo: 'Hace 45 segundos',
-    productName: 'Kit Réveillon Inesquecível',
-    price: 'US$1,99',
+    productName: 'Guía de Navidad + Kit Réveillon',
+    price: 'US$8,94',
     imageSrc: '/images/kit-reveillon-inesquecivel.jpg',
-    badge: 'Kit Réveillon',
-    badgeColor: 'bg-[#B58A45]/20 text-[#5E0001] border-[#B58A45]/40',
+    badge: 'Combo Completo',
+    badgeColor: 'bg-emerald-500/15 text-emerald-800 border-emerald-500/30',
   },
   {
     id: 'p4',
@@ -58,7 +59,7 @@ const purchaseCatalog: PurchaseEvent[] = [
     location: 'Buenos Aires, Argentina',
     timeAgo: 'Hace un instante',
     productName: 'Guía de Navidad + Kit Réveillon',
-    price: 'US$6,94',
+    price: 'US$8,94',
     imageSrc: '/images/kit-reveillon-inesquecivel.jpg',
     badge: 'Combo Completo',
     badgeColor: 'bg-emerald-500/15 text-emerald-800 border-emerald-500/30',
@@ -79,11 +80,11 @@ const purchaseCatalog: PurchaseEvent[] = [
     name: 'Elena D.',
     location: 'Barcelona, España',
     timeAgo: 'Hace 50 segundos',
-    productName: 'Kit Réveillon Inesquecível',
-    price: 'US$1,99',
+    productName: 'Guía de Navidad + Kit Réveillon',
+    price: 'US$8,94',
     imageSrc: '/images/kit-reveillon-inesquecivel.jpg',
-    badge: 'Kit Réveillon',
-    badgeColor: 'bg-[#B58A45]/20 text-[#5E0001] border-[#B58A45]/40',
+    badge: 'Combo Completo',
+    badgeColor: 'bg-emerald-500/15 text-emerald-800 border-emerald-500/30',
   },
   {
     id: 'p7',
@@ -101,11 +102,11 @@ const purchaseCatalog: PurchaseEvent[] = [
     name: 'Ana Sofía V.',
     location: 'Guadalajara, México',
     timeAgo: 'Hace 20 segundos',
-    productName: 'Kit Réveillon Inesquecível',
-    price: 'US$1,99',
+    productName: 'Guía de Navidad + Kit Réveillon',
+    price: 'US$8,94',
     imageSrc: '/images/kit-reveillon-inesquecivel.jpg',
-    badge: 'Kit Réveillon',
-    badgeColor: 'bg-[#B58A45]/20 text-[#5E0001] border-[#B58A45]/40',
+    badge: 'Combo Completo',
+    badgeColor: 'bg-emerald-500/15 text-emerald-800 border-emerald-500/30',
   },
   {
     id: 'p9',
@@ -113,7 +114,7 @@ const purchaseCatalog: PurchaseEvent[] = [
     location: 'Sevilla, España',
     timeAgo: 'Hace 3 minutos',
     productName: 'Guía de Navidad + Kit Réveillon',
-    price: 'US$6,94',
+    price: 'US$8,94',
     imageSrc: '/images/kit-reveillon-inesquecivel.jpg',
     badge: 'Combo Completo',
     badgeColor: 'bg-emerald-500/15 text-emerald-800 border-emerald-500/30',
@@ -134,11 +135,11 @@ const purchaseCatalog: PurchaseEvent[] = [
     name: 'Daniela C.',
     location: 'Medellín, Colombia',
     timeAgo: 'Hace 1 minuto',
-    productName: 'Kit Réveillon Inesquecível',
-    price: 'US$1,99',
+    productName: 'Guía de Navidad + Kit Réveillon',
+    price: 'US$8,94',
     imageSrc: '/images/kit-reveillon-inesquecivel.jpg',
-    badge: 'Kit Réveillon',
-    badgeColor: 'bg-[#B58A45]/20 text-[#5E0001] border-[#B58A45]/40',
+    badge: 'Combo Completo',
+    badgeColor: 'bg-emerald-500/15 text-emerald-800 border-emerald-500/30',
   },
   {
     id: 'p12',
@@ -156,11 +157,11 @@ const purchaseCatalog: PurchaseEvent[] = [
     name: 'Isabel N.',
     location: 'Valencia, España',
     timeAgo: 'Hace 40 segundos',
-    productName: 'Kit Réveillon Inesquecível',
-    price: 'US$1,99',
+    productName: 'Guía de Navidad + Kit Réveillon',
+    price: 'US$8,94',
     imageSrc: '/images/kit-reveillon-inesquecivel.jpg',
-    badge: 'Kit Réveillon',
-    badgeColor: 'bg-[#B58A45]/20 text-[#5E0001] border-[#B58A45]/40',
+    badge: 'Combo Completo',
+    badgeColor: 'bg-emerald-500/15 text-emerald-800 border-emerald-500/30',
   },
   {
     id: 'p14',
@@ -178,11 +179,11 @@ const purchaseCatalog: PurchaseEvent[] = [
     name: 'Fernanda B.',
     location: 'Quito, Ecuador',
     timeAgo: 'Hace 55 segundos',
-    productName: 'Kit Réveillon Inesquecível',
-    price: 'US$1,99',
+    productName: 'Guía de Navidad + Kit Réveillon',
+    price: 'US$8,94',
     imageSrc: '/images/kit-reveillon-inesquecivel.jpg',
-    badge: 'Kit Réveillon',
-    badgeColor: 'bg-[#B58A45]/20 text-[#5E0001] border-[#B58A45]/40',
+    badge: 'Combo Completo',
+    badgeColor: 'bg-emerald-500/15 text-emerald-800 border-emerald-500/30',
   },
   {
     id: 'p16',
@@ -190,7 +191,7 @@ const purchaseCatalog: PurchaseEvent[] = [
     location: 'San José, Costa Rica',
     timeAgo: 'Hace un instante',
     productName: 'Guía de Navidad + Kit Réveillon',
-    price: 'US$6,94',
+    price: 'US$8,94',
     imageSrc: '/images/kit-reveillon-inesquecivel.jpg',
     badge: 'Combo Completo',
     badgeColor: 'bg-emerald-500/15 text-emerald-800 border-emerald-500/30',
@@ -222,23 +223,20 @@ export function PurchaseNotificationPopup() {
       setCurrentPurchase(client);
       setIsVisible(true);
 
-      // Permanecer visible durante 5.5 segundos
+      // Permanece visible por 5.5 segundos
       hideTimer = setTimeout(() => {
         setIsVisible(false);
-
-        // Agendar la siguiente notificación entre 20 y 26 segundos
-        const nextDelay = 20000 + Math.random() * 6000;
-        nextTimer = setTimeout(triggerNotification, nextDelay);
+        // Intervalo realista aleatorio entre 9 y 15 segundos para la próxima notificación
+        const nextInterval = Math.floor(Math.random() * 6000) + 9000;
+        nextTimer = setTimeout(triggerNotification, nextInterval);
       }, 5500);
     };
 
-    // Primera aparición rápida: 2.5 segundos después de cargar la página
-    const initialDelayTimer = setTimeout(() => {
-      triggerNotification();
-    }, 2500);
+    // Primera aparición a los 4 segundos tras cargar
+    const initialTimer = setTimeout(triggerNotification, 4000);
 
     return () => {
-      clearTimeout(initialDelayTimer);
+      clearTimeout(initialTimer);
       clearTimeout(hideTimer);
       clearTimeout(nextTimer);
     };
@@ -249,11 +247,8 @@ export function PurchaseNotificationPopup() {
     setIsVisible(false);
   };
 
-  const handleScrollToOffer = () => {
-    const offerElement = document.getElementById('oferta');
-    if (offerElement) {
-      offerElement.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleNotificationClick = () => {
+    window.location.href = siteConfig.pricing.checkoutUrl;
     setIsVisible(false);
   };
 
@@ -265,7 +260,7 @@ export function PurchaseNotificationPopup() {
           animate={{ opacity: 1, y: 0, x: 0, scale: 1 }}
           exit={{ opacity: 0, y: 15, x: -15, scale: 0.96 }}
           transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          onClick={handleScrollToOffer}
+          onClick={handleNotificationClick}
           role="status"
           aria-live="polite"
           className="fixed bottom-22 left-3 sm:bottom-6 sm:left-6 z-50 max-w-[340px] sm:max-w-sm bg-[#FAF7F2]/98 border-2 border-[#B58A45]/50 rounded-2xl shadow-2xl p-3 sm:p-3.5 cursor-pointer hover:border-[#5E0001] transition-all group backdrop-blur-md"
@@ -318,17 +313,9 @@ export function PurchaseNotificationPopup() {
               aria-label="Cerrar notificación"
               className="absolute top-2 right-2 w-6 h-6 rounded-full bg-[#FAF7F2] text-[#76584C] hover:text-[#5E0001] hover:bg-[#F5EFEB] flex items-center justify-center transition-colors cursor-pointer border border-[#CFCABF]/40"
             >
-              <FaXmark className="w-3 h-3" aria-hidden="true" />
+              <FaXmark className="w-3.5 h-3.5" aria-hidden="true" />
             </button>
           </div>
-
-          {/* Barra animada de tiempo de visualización */}
-          <motion.div
-            initial={{ width: '100%' }}
-            animate={{ width: '0%' }}
-            transition={{ duration: 5.5, ease: 'linear' }}
-            className="h-0.5 bg-gradient-to-r from-[#A60B08] to-[#B58A45] rounded-full mt-2"
-          />
         </motion.aside>
       )}
     </AnimatePresence>
